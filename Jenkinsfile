@@ -11,7 +11,7 @@ pipeline {
                 sudo apt-get update
                 sudo apt-get install docker.io -y
                 sudo systemctl start docker
-                sudo usermod -a -G docker ec2-user
+                sudo usermod -a -G docker ubuntu
                 '''
                 
                 sh'''
