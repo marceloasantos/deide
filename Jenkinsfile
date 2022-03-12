@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh'''
                 sudo apt-get update
-                sudo apt-get install docker -y
+                sudo apt-get install docker.io -y
                 sudo systemctl start docker
                 sudo usermod -a -G docker ec2-user
                 '''
