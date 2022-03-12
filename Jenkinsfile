@@ -10,7 +10,7 @@ pipeline {
                 sh'''
                 sudo apt-get update
                 sudo apt-get install docker -y
-                sudo service docker start
+                sudo systemctl start docker
                 sudo usermod -a -G docker ec2-user
                 '''
                 
