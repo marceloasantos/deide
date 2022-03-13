@@ -26,6 +26,7 @@ pipeline {
 
             steps {
                 sh '''
+                    mvn clean install
                     docker build -t springio/gs-spring-boot-docker .
                     '''
             }
