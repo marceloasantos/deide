@@ -26,6 +26,7 @@ pipeline {
 
             steps {
                 sh '''
+                    cd springboot-dungeonsanddragons/
                     mvn clean install
                     docker build -t springio/gs-spring-boot-docker .
                     '''
